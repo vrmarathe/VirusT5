@@ -1,0 +1,49 @@
+
+
+ TOKENIZER IMPORTED !!
+
+
+ MODEL IMPORTED !!
+   Unnamed: 0                                               Seq1 Label_Variant
+0           0  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...         alpha
+1           1  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...         alpha
+2           2  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...         alpha
+3           3  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...         alpha
+4           4  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...         alpha
+(100, 3)
+   Unnamed: 0                                               Seq1 Label_Variant
+0           0  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...         delta
+1           1  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...         delta
+2           2  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...         delta
+3           3  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...         delta
+4           4  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...         delta
+(100, 3)
+   Unnamed: 0                                               Seq1 Label_Variant
+0           0  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...       omicron
+1           1  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...       omicron
+2           2  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...       omicron
+3           3  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...       omicron
+4           4  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...       omicron
+(100, 3)
+   Unnamed: 0                                               Seq1 Label_Variant
+0           0  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...        nonvoc
+1           1  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...        nonvoc
+2           2  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...        nonvoc
+3           3  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...        nonvoc
+4           4  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...        nonvoc
+(100, 3)
+   Unnamed: 0                                               Seq1 Label_Variant
+0           0  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...         alpha
+1           1  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...         alpha
+2           2  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...         alpha
+3           3  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...         alpha
+4           4  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...         alpha
+(400, 3)
+   Unnamed: 0  ... Pred_Variant
+0           0  ...          aha
+1           1  ...        [aha]
+2           2  ...        [aha]
+3           3  ...        [aha]
+4           4  ...        [aha]
+
+[5 rows x 4 columns]

@@ -1,0 +1,11 @@
+Original Dataset !! 
+  Lineage GenS1  ...                                               Seq2   Variant
+0       A  Gen1  ...  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...  WuhanHu1
+1       A  Gen1  ...  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...  WuhanHu1
+2       A  Gen1  ...  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...  WuhanHu1
+3       A  Gen1  ...  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...  WuhanHu1
+4       A  Gen1  ...  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...  WuhanHu1
+
+[5 rows x 6 columns]
+
+Columns: Index(['Lineage', 'GenS1', 'GenS2', 'Seq1', 'Seq2', 'Variant'], dtype='object')

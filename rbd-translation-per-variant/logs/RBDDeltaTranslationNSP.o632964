@@ -1,0 +1,242 @@
+Original Dataset !! 
+  Lineage GenS1  ...                                               Seq2   Variant
+0       A  Gen1  ...  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...  WuhanHu1
+1       A  Gen1  ...  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...  WuhanHu1
+2       A  Gen1  ...  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...  WuhanHu1
+3       A  Gen1  ...  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...  WuhanHu1
+4       A  Gen1  ...  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...  WuhanHu1
+
+[5 rows x 6 columns]
+
+Columns: Index(['Lineage', 'GenS1', 'GenS2', 'Seq1', 'Seq2', 'Variant'], dtype='object')
+     Lineage GenS1  ...                                               Seq2 Variant
+1329    AY.1  Gen1  ...  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...   delta
+1330    AY.1  Gen1  ...  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...   delta
+1331    AY.1  Gen1  ...  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...   delta
+1332    AY.1  Gen1  ...  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...   delta
+1333    AY.1  Gen1  ...  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...   delta
+
+[5 rows x 6 columns]
+(173300, 6)
+I AM HERE !
+I AM HERE !!
+                                                   Seq1  ...                                        translation
+1329  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...  ...  {'Seq1': 'AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCT...
+1330  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...  ...  {'Seq1': 'AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCT...
+1331  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...  ...  {'Seq1': 'AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCT...
+1332  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...  ...  {'Seq1': 'AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCT...
+1333  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...  ...  {'Seq1': 'AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCT...
+
+[5 rows x 4 columns]
+
+ Huggingface Dataset : 
+ DatasetDict({
+    train: Dataset({
+        features: ['translation', '__index_level_0__'],
+        num_rows: 138640
+    })
+    test: Dataset({
+        features: ['translation', '__index_level_0__'],
+        num_rows: 34660
+    })
+})
+DatasetDict({
+    train: Dataset({
+        features: ['translation', '__index_level_0__'],
+        num_rows: 110912
+    })
+    test: Dataset({
+        features: ['translation', '__index_level_0__'],
+        num_rows: 27728
+    })
+})
+DatasetDict({
+    train: Dataset({
+        features: ['translation', '__index_level_0__'],
+        num_rows: 110912
+    })
+    validation: Dataset({
+        features: ['translation', '__index_level_0__'],
+        num_rows: 27728
+    })
+})
+DatasetDict({
+    train: Dataset({
+        features: ['translation', '__index_level_0__'],
+        num_rows: 110912
+    })
+    validation: Dataset({
+        features: ['translation', '__index_level_0__'],
+        num_rows: 27728
+    })
+    test: Dataset({
+        features: ['translation', '__index_level_0__'],
+        num_rows: 34660
+    })
+})
+
+
+Dataset after Breaking into Train_Val_Test
+DatasetDict({
+    train: Dataset({
+        features: ['translation', '__index_level_0__'],
+        num_rows: 110912
+    })
+    validation: Dataset({
+        features: ['translation', '__index_level_0__'],
+        num_rows: 27728
+    })
+    test: Dataset({
+        features: ['translation', '__index_level_0__'],
+        num_rows: 34660
+    })
+})
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+
+
+IMPORTED MODEL !! 
+ 
+{'loss': 0.0553, 'learning_rate': 1.963935372186959e-05, 'epoch': 0.07}
+{'loss': 0.0377, 'learning_rate': 1.9278707443739183e-05, 'epoch': 0.14}
+{'loss': 0.0352, 'learning_rate': 1.8918061165608773e-05, 'epoch': 0.22}
+{'loss': 0.0322, 'learning_rate': 1.8557414887478362e-05, 'epoch': 0.29}
+{'loss': 0.0324, 'learning_rate': 1.819676860934795e-05, 'epoch': 0.36}
+{'loss': 0.0329, 'learning_rate': 1.7836122331217543e-05, 'epoch': 0.43}
+{'loss': 0.0304, 'learning_rate': 1.7475476053087133e-05, 'epoch': 0.5}
+{'loss': 0.0285, 'learning_rate': 1.7114829774956725e-05, 'epoch': 0.58}
+{'loss': 0.0277, 'learning_rate': 1.6754183496826314e-05, 'epoch': 0.65}
+{'loss': 0.0266, 'learning_rate': 1.6393537218695904e-05, 'epoch': 0.72}
+{'loss': 0.0275, 'learning_rate': 1.6032890940565496e-05, 'epoch': 0.79}
+{'loss': 0.0272, 'learning_rate': 1.5672244662435085e-05, 'epoch': 0.87}
+{'loss': 0.0254, 'learning_rate': 1.5311598384304675e-05, 'epoch': 0.94}
+                                              Labels                                        Predictions
+0  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+1  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+2  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+3  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+4  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+
+
+ Decoded Preds: aga gag agt gtc tcc cca caa aac acc cca caa aac aca cag aga gaa aat atc tct cta tat att ttg tgt gtt tta tag aga gat att ttt ttc tcc cct cta taa aat ata tat att tta tac aca caa aaa aac act ctt ttg tgt gtg tgc gcc ccc cct ctt ttt ttt ttg tgg ggt gtg tga gaa aag agt gtt ttt ttt ttt tta taa aac acg cgc gcc cca cac acc cca cag aga gat att ttt ttg tgc gca cat atc tct ctg tgt gtt ttt tta tat atg tgc gct ctt ttg tgg gga gaa aac aca cag agg gga gaa aag aga gag aga gaa aat atc tca cag agc gca caa aac act ctg tgt gtg tgt gtt ttg tgc gct ctg tga gat att tta tat att ttc tct ctg tgt gtc tcc cct cta tat ata tat ata taa aat att ttc tcc ccg cgc gca cat atc tca cat att ttt ttt ttc tcc cca cac act ctt ttt ttt tta taa aag agt gtg tgt gtt tta tat atg tgg gga gag agt gtg tgt gtc tct ctc tcc cct cta tac act cta taa aaa aat att tta taa aaa aat atg tga gat atc tct ctc tct ctg tgc gct ctt ttt tta tac act cta taa aat atg tgt gtc tct cta tat atg tgc gca cag aga gat att ttc tca cat att ttt ttg tgt gta taa aat att tta tag aga gag agg ggt gtg tga gat atg tga gaa aag agt gtc tca cag aga gac aca caa aaa aat atc tcg cgc gct ctc tcc cca cag agg ggg ggc gca caa aaa aac act ctg tgg gga gaa aaa aag aga gat att ttg tgc gct ctg tga gat att tta tat ata taa aat att tta tat ata taa aaa aat att tta tac acc cca cag aga gat atg tga gat att ttt ttt tta tac aca cag agg ggc gct ctg tgc gcg cgt gtt tta tat ata tag agc gct ctt ttg tgg gga gaa aat att ttc tct cta taa aac aca caa aat atc tct ctt ttg tga gat att ttc tct cta taa aag agg ggt gtt ttg tgg ggt gtg tgg ggt gta taa aat att tta tat ata taa aat att tta tac acc ccg cgg ggt gta tat ata tag aga gat att ttg tgt gtt ttt tta tag agg gga gaa aag agt gtc tct cta taa aat atc tct ctc tca caa aaa aac acc cct ctt ttt ttt ttg tga gag aga gag aga gag aga gat ata tat att ttt ttc tca caa aac act ctg tga gaa aaa aat atc tct cta tat atc tca cag agg ggc gcc ccg cgg ggt gta tag agc gca caa aaa aac acc cct ctt ttg tgt gta taa aat atg tgg ggt gtg tgt gtt ttg tga gaa aag agg ggt gtt ttt ttt tta taa aat att ttg tgt gtt tta tac act ctt ttt ttc tcc cct ctt ttt tta tac aca caa aat atc tca cat ata tat atg tgg ggt gtt ttt ttc tcc cca caa aac acc ccc cca cac act cta taa aat atg tgg ggt gtg tgt gtt ttg tgg ggt gtt tta tac acc cca caa aac acc cca cat ata tac aca cag aga gag agt gta tag agt gta tag agt gta tac act ctt ttt ttc tct ctt ttt ttt ttg tga gaa aac act ctt ttc tct cta tac aca cat atg tgc gca cac acc cca cag agc gca caa aac act ctg tgt gtt ttt ttg tgt gtg tgg gga gac acc cct cta taa aaa aaa aaa aag agt gtc tct cta tac act cta taa aat att ttt ttg tgg ggt gtt tta taa aaa aaa aaa aac aca caa aaa aat atg tgt gtg tgt gtc tca caa aat att ttt ttc 
+
+ Decoded Labels: aga gag agt gtc tcc cca caa aac acc cca caa aac aca cag aga gaa aat atc tct cta tat att ttg tgt gtt tta tag aga gat att ttt ttc tcc cct cta taa aat ata tat att tta tac aca caa aaa aac act ctt ttg tgt gtg tgc gcc ccc cct ctt ttt ttt ttg tgg ggt gtg tga gaa aag agt gtt ttt ttt ttt tta taa aac acg cgc gcc cca cac acc cca cag aga gat att ttt ttg tgc gca cat atc tct ctg tgt gtt ttt tta tat atg tgc gct ctt ttg tgg gga gaa aac aca cag agg gga gaa aag aga gag aga gaa aat atc tca cag agc gca caa aac act ctg tgt gtg tgt gtt ttg tgc gct ctg tga gat att tta tat att ttc tct ctg tgt gtc tcc cct cta tat ata tat ata taa aat att ttc tcc ccg cgc gca cat atc tca cat att ttt ttt ttc tcc cca cac act ctt ttt ttt tta taa aag agt gtg tgt gtt tta tat atg tgg gga gag agt gtg tgt gtc tct ctc tcc cct cta tac act cta taa aaa aat att tta taa aaa aat atg tga gat atc tct ctc tct ctg tgc gct ctt ttt tta tac act cta taa aat atg tgt gtc tct cta tat atg tgc gca cag aga gat att ttc tca cat att ttt ttg tgt gta taa aat att tta tag aga gag agg ggt gtg tga gat atg tga gaa aag agt gtc tca cag aga gac aca caa aaa aat atc tcg cgc gct ctc tcc cca cag agg ggg ggc gca caa aaa aac act ctg tgg gga gaa aaa aag aga gat att ttg tgc gct ctg tga gat att tta tat ata taa aat att tta tat ata taa aaa aat att tta tac acc cca cag aga gat atg tga gat att ttt ttt tta tac aca cag agg ggc gct ctg tgc gcg cgt gtt tta tat ata tag agc gct ctt ttg tgg gga gaa aat att ttc tct cta taa aac aca caa aat atc tct ctt ttg tga gat att ttc tct cta taa aag agg ggt gtt ttg tgg ggt gtg tgg ggt gta taa aat att tta tat ata taa aat att tta tac acc ccg cgg ggt gta tat ata tag aga gat att ttg tgt gtt ttt tta tag agg gga gaa aag agt gtc tct cta taa aat atc tct ctc tca caa aaa aac acc cct ctt ttt ttt ttg tga gag aga gag aga gag aga gat ata tat att ttt ttc tca caa aac act ctg tga gaa aaa aat atc tct cta tat atc tca cag agg ggc gcc ccg cgg ggt gta tag agc gca caa aaa aac acc cct ctt ttg tgt gta taa aat atg tgg ggt gtg tgt gtt ttg tga gaa aag agg ggt gtt ttt ttt tta taa aat att ttg tgt gtt tta tac act ctt ttt ttc tcc cct ctt ttt tta tac aca caa aat atc tca cat ata tat atg tgg ggt gtt ttt ttc tcc cca caa aac acc ccc cca cac act cta taa aat atg tgg ggt gtg tgt gtt ttg tgg ggt gtt tta tac acc cca caa aac acc cca cat ata tac aca cag aga gag agt gta tag agt gta tag agt gta tac act ctt ttt ttc tct ctt ttt ttt ttg tga gaa aac act ctt ttc tct cta tac aca cat atg tgc gca cac acc cca cag agc gca caa aac act ctg tgt gtt ttt ttg tgt gtg tgg gga gac acc cct cta taa aaa aaa aaa aag agt gtc tct cta tac act cta taa aat att ttt ttg tgg ggt gtt tta taa aaa aaa aaa aac aca caa aaa aat atg tgt gtg tgt gtc tca caa aat att ttt ttc
+{'eval_loss': 0.02614029310643673, 'eval_bleu': 0.9990786973919981, 'eval_precisions': [0.9993924705275752, 0.9991833473692966, 0.9989775542433695, 0.9987615276454925], 'eval_brevity_penalty': 1.0, 'eval_length_ratio': 1.0000035686265816, 'eval_translation_length': 18494576, 'eval_reference_length': 18494510, 'eval_runtime': 1899.2396, 'eval_samples_per_second': 14.6, 'eval_steps_per_second': 0.912, 'epoch': 1.0}
+{'loss': 0.0273, 'learning_rate': 1.4950952106174265e-05, 'epoch': 1.01}
+{'loss': 0.0259, 'learning_rate': 1.4590305828043856e-05, 'epoch': 1.08}
+{'loss': 0.0264, 'learning_rate': 1.4229659549913445e-05, 'epoch': 1.15}
+{'loss': 0.0259, 'learning_rate': 1.3869013271783036e-05, 'epoch': 1.23}
+{'loss': 0.0247, 'learning_rate': 1.3508366993652625e-05, 'epoch': 1.3}
+{'loss': 0.0271, 'learning_rate': 1.3147720715522216e-05, 'epoch': 1.37}
+{'loss': 0.0257, 'learning_rate': 1.2787074437391807e-05, 'epoch': 1.44}
+{'loss': 0.0255, 'learning_rate': 1.2426428159261396e-05, 'epoch': 1.51}
+{'loss': 0.0259, 'learning_rate': 1.2065781881130987e-05, 'epoch': 1.59}
+{'loss': 0.0243, 'learning_rate': 1.1705135603000576e-05, 'epoch': 1.66}
+{'loss': 0.0247, 'learning_rate': 1.1344489324870169e-05, 'epoch': 1.73}
+{'loss': 0.0243, 'learning_rate': 1.098384304673976e-05, 'epoch': 1.8}
+{'loss': 0.0238, 'learning_rate': 1.0623196768609349e-05, 'epoch': 1.88}
+{'loss': 0.0236, 'learning_rate': 1.026255049047894e-05, 'epoch': 1.95}
+                                              Labels                                        Predictions
+0  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+1  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+2  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+3  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+4  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+
+
+ Decoded Preds: aga gag agt gtc tcc cca caa aac acc cca caa aac aca cag aga gaa aat atc tct cta tat att ttg tgt gtt tta tag aga gat att ttt ttc tcc cct cta taa aat ata tat att tta tac aca caa aaa aac act ctt ttg tgt gtg tgc gcc ccc cct ctt ttt ttt ttg tgg ggt gtg tga gaa aag agt gtt ttt ttt ttt tta taa aac acg cgc gcc cca cac acc cca cag aga gat att ttt ttg tgc gca cat atc tct ctg tgt gtt ttt tta tat atg tgc gct ctt ttg tgg gga gaa aac aca cag agg gga gaa aag aga gag aga gaa aat atc tca cag agc gca caa aac act ctg tgt gtg tgt gtt ttg tgc gct ctg tga gat att tta tat att ttc tct ctg tgt gtc tcc cct cta tat ata tat ata taa aat att ttc tcc ccg cgc gca cat atc tca cat att ttt ttt ttc tcc cca cac act ctt ttt ttt tta taa aag agt gtg tgt gtt tta tat atg tgg gga gag agt gtg tgt gtc tct ctc tcc cct cta tac act cta taa aaa aat att tta taa aaa aat atg tga gat atc tct ctc tct ctg tgc gct ctt ttt tta tac act cta taa aat atg tgt gtc tct cta tat atg tgc gca cag aga gat att ttc tca cat att ttt ttg tgt gta taa aat att tta tag aga gag agg ggt gtg tga gat atg tga gaa aag agt gtc tca cag aga gac aca caa aaa aat atc tcg cgc gct ctc tcc cca cag agg ggg ggc gca caa aaa aac act ctg tgg gga gaa aaa aag aga gat att ttg tgc gct ctg tga gat att tta tat ata taa aat att tta tat ata taa aaa aat att tta tac acc cca cag aga gat atg tga gat att ttt ttt tta tac aca cag agg ggc gct ctg tgc gcg cgt gtt tta tat ata tag agc gct ctt ttg tgg gga gaa aat att ttc tct cta taa aac aca caa aat atc tct ctt ttg tga gat att ttc tct cta taa aag agg ggt gtt ttg tgg ggt gtg tgg ggt gta taa aat att tta tat ata taa aat att tta tac acc ccg cgg ggt gta tat ata tag aga gat att ttg tgt gtt ttt tta tag agg gga gaa aag agt gtc tct cta taa aat atc tct ctc tca caa aaa aac acc cct ctt ttt ttt ttg tga gag aga gag aga gag aga gat ata tat att ttt ttc tca caa aac act ctg tga gaa aaa aat atc tct cta tat atc tca cag agg ggc gcc ccg cgg ggt gta tag agc gca caa aaa aac acc cct ctt ttg tgt gta taa aat atg tgg ggt gtg tgt gtt ttg tga gaa aag agg ggt gtt ttt ttt tta taa aat att ttg tgt gtt tta tac act ctt ttt ttc tcc cct ctt ttt tta tac aca caa aat atc tca cat ata tat atg tgg ggt gtt ttt ttc tcc cca caa aac acc ccc cca cac act cta taa aat atg tgg ggt gtg tgt gtt ttg tgg ggt gtt tta tac acc cca caa aac acc cca cat ata tac aca cag aga gag agt gta tag agt gta tag agt gta tac act ctt ttt ttc tct ctt ttt ttt ttg tga gaa aac act ctt ttc tct cta tac aca cat atg tgc gca cac acc cca cag agc gca caa aac act ctg tgt gtt ttt ttg tgt gtg tgg gga gac acc cct cta taa aaa aaa aaa aag agt gtc tct cta tac act cta taa aat att ttt ttg tgg ggt gtt tta taa aaa aaa aaa aac aca caa aaa aat atg tgt gtg tgt gtc tca caa aat att ttt ttc 
+
+ Decoded Labels: aga gag agt gtc tcc cca caa aac acc cca caa aac aca cag aga gaa aat atc tct cta tat att ttg tgt gtt tta tag aga gat att ttt ttc tcc cct cta taa aat ata tat att tta tac aca caa aaa aac act ctt ttg tgt gtg tgc gcc ccc cct ctt ttt ttt ttg tgg ggt gtg tga gaa aag agt gtt ttt ttt ttt tta taa aac acg cgc gcc cca cac acc cca cag aga gat att ttt ttg tgc gca cat atc tct ctg tgt gtt ttt tta tat atg tgc gct ctt ttg tgg gga gaa aac aca cag agg gga gaa aag aga gag aga gaa aat atc tca cag agc gca caa aac act ctg tgt gtg tgt gtt ttg tgc gct ctg tga gat att tta tat att ttc tct ctg tgt gtc tcc cct cta tat ata tat ata taa aat att ttc tcc ccg cgc gca cat atc tca cat att ttt ttt ttc tcc cca cac act ctt ttt ttt tta taa aag agt gtg tgt gtt tta tat atg tgg gga gag agt gtg tgt gtc tct ctc tcc cct cta tac act cta taa aaa aat att tta taa aaa aat atg tga gat atc tct ctc tct ctg tgc gct ctt ttt tta tac act cta taa aat atg tgt gtc tct cta tat atg tgc gca cag aga gat att ttc tca cat att ttt ttg tgt gta taa aat att tta tag aga gag agg ggt gtg tga gat atg tga gaa aag agt gtc tca cag aga gac aca caa aaa aat atc tcg cgc gct ctc tcc cca cag agg ggg ggc gca caa aaa aac act ctg tgg gga gaa aaa aag aga gat att ttg tgc gct ctg tga gat att tta tat ata taa aat att tta tat ata taa aaa aat att tta tac acc cca cag aga gat atg tga gat att ttt ttt tta tac aca cag agg ggc gct ctg tgc gcg cgt gtt tta tat ata tag agc gct ctt ttg tgg gga gaa aat att ttc tct cta taa aac aca caa aat atc tct ctt ttg tga gat att ttc tct cta taa aag agg ggt gtt ttg tgg ggt gtg tgg ggt gta taa aat att tta tat ata taa aat att tta tac acc ccg cgg ggt gta tat ata tag aga gat att ttg tgt gtt ttt tta tag agg gga gaa aag agt gtc tct cta taa aat atc tct ctc tca caa aaa aac acc cct ctt ttt ttt ttg tga gag aga gag aga gag aga gat ata tat att ttt ttc tca caa aac act ctg tga gaa aaa aat atc tct cta tat atc tca cag agg ggc gcc ccg cgg ggt gta tag agc gca caa aaa aac acc cct ctt ttg tgt gta taa aat atg tgg ggt gtg tgt gtt ttg tga gaa aag agg ggt gtt ttt ttt tta taa aat att ttg tgt gtt tta tac act ctt ttt ttc tcc cct ctt ttt tta tac aca caa aat atc tca cat ata tat atg tgg ggt gtt ttt ttc tcc cca caa aac acc ccc cca cac act cta taa aat atg tgg ggt gtg tgt gtt ttg tgg ggt gtt tta tac acc cca caa aac acc cca cat ata tac aca cag aga gag agt gta tag agt gta tag agt gta tac act ctt ttt ttc tct ctt ttt ttt ttg tga gaa aac act ctt ttc tct cta tac aca cat atg tgc gca cac acc cca cag agc gca caa aac act ctg tgt gtt ttt ttg tgt gtg tgg gga gac acc cct cta taa aaa aaa aaa aag agt gtc tct cta tac act cta taa aat att ttt ttg tgg ggt gtt tta taa aaa aaa aaa aac aca caa aaa aat atg tgt gtg tgt gtc tca caa aat att ttt ttc
+{'eval_loss': 0.02510804496705532, 'eval_bleu': 0.9990998008720108, 'eval_precisions': [0.9994078263810968, 0.9992018670430384, 0.9989992472525804, 0.9987903684849032], 'eval_brevity_penalty': 1.0, 'eval_length_ratio': 1.0000035686265816, 'eval_translation_length': 18494576, 'eval_reference_length': 18494510, 'eval_runtime': 1900.9728, 'eval_samples_per_second': 14.586, 'eval_steps_per_second': 0.912, 'epoch': 2.0}
+{'loss': 0.0255, 'learning_rate': 9.90262550490479e-06, 'epoch': 2.02}
+{'loss': 0.0231, 'learning_rate': 9.54197922677438e-06, 'epoch': 2.09}
+{'loss': 0.0236, 'learning_rate': 9.18133294864397e-06, 'epoch': 2.16}
+{'loss': 0.0239, 'learning_rate': 8.820686670513561e-06, 'epoch': 2.24}
+{'loss': 0.0243, 'learning_rate': 8.460761684939412e-06, 'epoch': 2.31}
+{'loss': 0.0241, 'learning_rate': 8.100115406809003e-06, 'epoch': 2.38}
+{'loss': 0.0236, 'learning_rate': 7.739469128678592e-06, 'epoch': 2.45}
+{'loss': 0.0231, 'learning_rate': 7.379544143104443e-06, 'epoch': 2.52}
+{'loss': 0.0241, 'learning_rate': 7.018897864974033e-06, 'epoch': 2.6}
+{'loss': 0.0247, 'learning_rate': 6.658251586843625e-06, 'epoch': 2.67}
+{'loss': 0.0241, 'learning_rate': 6.297605308713215e-06, 'epoch': 2.74}
+{'loss': 0.0231, 'learning_rate': 5.936959030582805e-06, 'epoch': 2.81}
+{'loss': 0.0251, 'learning_rate': 5.576312752452395e-06, 'epoch': 2.89}
+{'loss': 0.0228, 'learning_rate': 5.215666474321985e-06, 'epoch': 2.96}
+                                              Labels                                        Predictions
+0  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+1  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+2  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+3  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+4  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+
+
+ Decoded Preds: aga gag agt gtc tcc cca caa aac acc cca caa aac aca cag aga gaa aat atc tct cta tat att ttg tgt gtt tta tag aga gat att ttt ttc tcc cct cta taa aat ata tat att tta tac aca caa aaa aac act ctt ttg tgt gtg tgc gcc ccc cct ctt ttt ttt ttg tgg ggt gtg tga gaa aag agt gtt ttt ttt ttt tta taa aac acg cgc gcc cca cac acc cca cag aga gat att ttt ttg tgc gca cat atc tct ctg tgt gtt ttt tta tat atg tgc gct ctt ttg tgg gga gaa aac aca cag agg gga gaa aag aga gag aga gaa aat atc tca cag agc gca caa aac act ctg tgt gtg tgt gtt ttg tgc gct ctg tga gat att tta tat att ttc tct ctg tgt gtc tcc cct cta tat ata tat ata taa aat att ttc tcc ccg cgc gca cat atc tca cat att ttt ttt ttc tcc cca cac act ctt ttt ttt tta taa aag agt gtg tgt gtt tta tat atg tgg gga gag agt gtg tgt gtc tct ctc tcc cct cta tac act cta taa aaa aat att tta taa aaa aat atg tga gat atc tct ctc tct ctg tgc gct ctt ttt tta tac act cta taa aat atg tgt gtc tct cta tat atg tgc gca cag aga gat att ttc tca cat att ttt ttg tgt gta taa aat att tta tag aga gag agg ggt gtg tga gat atg tga gaa aag agt gtc tca cag aga gac aca caa aaa aat atc tcg cgc gct ctc tcc cca cag agg ggg ggc gca caa aaa aac act ctg tgg gga gaa aaa aag aga gat att ttg tgc gct ctg tga gat att tta tat ata taa aat att tta tat ata taa aaa aat att tta tac acc cca cag aga gat atg tga gat att ttt ttt tta tac aca cag agg ggc gct ctg tgc gcg cgt gtt tta tat ata tag agc gct ctt ttg tgg gga gaa aat att ttc tct cta taa aac aca caa aat atc tct ctt ttg tga gat att ttc tct cta taa aag agg ggt gtt ttg tgg ggt gtg tgg ggt gta taa aat att tta tat ata taa aat att tta tac acc ccg cgg ggt gta tat ata tag aga gat att ttg tgt gtt ttt tta tag agg gga gaa aag agt gtc tct cta taa aat atc tct ctc tca caa aaa aac acc cct ctt ttt ttt ttg tga gag aga gag aga gag aga gat ata tat att ttt ttc tca caa aac act ctg tga gaa aaa aat atc tct cta tat atc tca cag agg ggc gcc ccg cgg ggt gta tag agc gca caa aaa aac acc cct ctt ttg tgt gta taa aat atg tgg ggt gtg tgt gtt ttg tga gaa aag agg ggt gtt ttt ttt tta taa aat att ttg tgt gtt tta tac act ctt ttt ttc tcc cct ctt ttt tta tac aca caa aat atc tca cat ata tat atg tgg ggt gtt ttt ttc tcc cca caa aac acc ccc cca cac act cta taa aat atg tgg ggt gtg tgt gtt ttg tgg ggt gtt tta tac acc cca caa aac acc cca cat ata tac aca cag aga gag agt gta tag agt gta tag agt gta tac act ctt ttt ttc tct ctt ttt ttt ttg tga gaa aac act ctt ttc tct cta tac aca cat atg tgc gca cac acc cca cag agc gca caa aac act ctg tgt gtt ttt ttg tgt gtg tgg gga gac acc cct cta taa aaa aaa aaa aag agt gtc tct cta tac act cta taa aat att ttt ttg tgg ggt gtt tta taa aaa aaa aaa aac aca caa aaa aat atg tgt gtg tgt gtc tca caa aat att ttt ttc 
+
+ Decoded Labels: aga gag agt gtc tcc cca caa aac acc cca caa aac aca cag aga gaa aat atc tct cta tat att ttg tgt gtt tta tag aga gat att ttt ttc tcc cct cta taa aat ata tat att tta tac aca caa aaa aac act ctt ttg tgt gtg tgc gcc ccc cct ctt ttt ttt ttg tgg ggt gtg tga gaa aag agt gtt ttt ttt ttt tta taa aac acg cgc gcc cca cac acc cca cag aga gat att ttt ttg tgc gca cat atc tct ctg tgt gtt ttt tta tat atg tgc gct ctt ttg tgg gga gaa aac aca cag agg gga gaa aag aga gag aga gaa aat atc tca cag agc gca caa aac act ctg tgt gtg tgt gtt ttg tgc gct ctg tga gat att tta tat att ttc tct ctg tgt gtc tcc cct cta tat ata tat ata taa aat att ttc tcc ccg cgc gca cat atc tca cat att ttt ttt ttc tcc cca cac act ctt ttt ttt tta taa aag agt gtg tgt gtt tta tat atg tgg gga gag agt gtg tgt gtc tct ctc tcc cct cta tac act cta taa aaa aat att tta taa aaa aat atg tga gat atc tct ctc tct ctg tgc gct ctt ttt tta tac act cta taa aat atg tgt gtc tct cta tat atg tgc gca cag aga gat att ttc tca cat att ttt ttg tgt gta taa aat att tta tag aga gag agg ggt gtg tga gat atg tga gaa aag agt gtc tca cag aga gac aca caa aaa aat atc tcg cgc gct ctc tcc cca cag agg ggg ggc gca caa aaa aac act ctg tgg gga gaa aaa aag aga gat att ttg tgc gct ctg tga gat att tta tat ata taa aat att tta tat ata taa aaa aat att tta tac acc cca cag aga gat atg tga gat att ttt ttt tta tac aca cag agg ggc gct ctg tgc gcg cgt gtt tta tat ata tag agc gct ctt ttg tgg gga gaa aat att ttc tct cta taa aac aca caa aat atc tct ctt ttg tga gat att ttc tct cta taa aag agg ggt gtt ttg tgg ggt gtg tgg ggt gta taa aat att tta tat ata taa aat att tta tac acc ccg cgg ggt gta tat ata tag aga gat att ttg tgt gtt ttt tta tag agg gga gaa aag agt gtc tct cta taa aat atc tct ctc tca caa aaa aac acc cct ctt ttt ttt ttg tga gag aga gag aga gag aga gat ata tat att ttt ttc tca caa aac act ctg tga gaa aaa aat atc tct cta tat atc tca cag agg ggc gcc ccg cgg ggt gta tag agc gca caa aaa aac acc cct ctt ttg tgt gta taa aat atg tgg ggt gtg tgt gtt ttg tga gaa aag agg ggt gtt ttt ttt tta taa aat att ttg tgt gtt tta tac act ctt ttt ttc tcc cct ctt ttt tta tac aca caa aat atc tca cat ata tat atg tgg ggt gtt ttt ttc tcc cca caa aac acc ccc cca cac act cta taa aat atg tgg ggt gtg tgt gtt ttg tgg ggt gtt tta tac acc cca caa aac acc cca cat ata tac aca cag aga gag agt gta tag agt gta tag agt gta tac act ctt ttt ttc tct ctt ttt ttt ttg tga gaa aac act ctt ttc tct cta tac aca cat atg tgc gca cac acc cca cag agc gca caa aac act ctg tgt gtt ttt ttg tgt gtg tgg gga gac acc cct cta taa aaa aaa aaa aag agt gtc tct cta tac act cta taa aat att ttt ttg tgg ggt gtt tta taa aaa aaa aaa aac aca caa aaa aat atg tgt gtg tgt gtc tca caa aat att ttt ttc
+{'eval_loss': 0.02414429932832718, 'eval_bleu': 0.9991031489258265, 'eval_precisions': [0.9994099891773675, 0.9992047912020503, 0.9990029892966693, 0.9987949308775784], 'eval_brevity_penalty': 1.0, 'eval_length_ratio': 1.0000035686265816, 'eval_translation_length': 18494576, 'eval_reference_length': 18494510, 'eval_runtime': 1887.0851, 'eval_samples_per_second': 14.694, 'eval_steps_per_second': 0.918, 'epoch': 3.0}
+{'loss': 0.0238, 'learning_rate': 4.855020196191575e-06, 'epoch': 3.03}
+{'loss': 0.0234, 'learning_rate': 4.494373918061166e-06, 'epoch': 3.1}
+{'loss': 0.0227, 'learning_rate': 4.133727639930756e-06, 'epoch': 3.17}
+{'loss': 0.0234, 'learning_rate': 3.7730813618003466e-06, 'epoch': 3.25}
+{'loss': 0.0223, 'learning_rate': 3.4131563762261975e-06, 'epoch': 3.32}
+{'loss': 0.0235, 'learning_rate': 3.053231390652049e-06, 'epoch': 3.39}
+{'loss': 0.0231, 'learning_rate': 2.692585112521639e-06, 'epoch': 3.46}
+{'loss': 0.0233, 'learning_rate': 2.331938834391229e-06, 'epoch': 3.53}
+{'loss': 0.0218, 'learning_rate': 1.9712925562608194e-06, 'epoch': 3.61}
+{'loss': 0.0233, 'learning_rate': 1.6106462781304097e-06, 'epoch': 3.68}
+{'loss': 0.022, 'learning_rate': 1.25e-06, 'epoch': 3.75}
+{'loss': 0.021, 'learning_rate': 8.893537218695903e-07, 'epoch': 3.82}
+{'loss': 0.0236, 'learning_rate': 5.287074437391807e-07, 'epoch': 3.89}
+{'loss': 0.0226, 'learning_rate': 1.6806116560877092e-07, 'epoch': 3.97}
+                                              Labels                                        Predictions
+0  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+1  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+2  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+3  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+4  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+
+
+ Decoded Preds: aga gag agt gtc tcc cca caa aac acc cca caa aac aca cag aga gaa aat atc tct cta tat att ttg tgt gtt tta tag aga gat att ttt ttc tcc cct cta taa aat ata tat att tta tac aca caa aaa aac act ctt ttg tgt gtg tgc gcc ccc cct ctt ttt ttt ttg tgg ggt gtg tga gaa aag agt gtt ttt ttt ttt tta taa aac acg cgc gcc cca cac acc cca cag aga gat att ttt ttg tgc gca cat atc tct ctg tgt gtt ttt tta tat atg tgc gct ctt ttg tgg gga gaa aac aca cag agg gga gaa aag aga gag aga gaa aat atc tca cag agc gca caa aac act ctg tgt gtg tgt gtt ttg tgc gct ctg tga gat att tta tat att ttc tct ctg tgt gtc tcc cct cta tat ata tat ata taa aat att ttc tcc ccg cgc gca cat atc tca cat att ttt ttt ttc tcc cca cac act ctt ttt ttt tta taa aag agt gtg tgt gtt tta tat atg tgg gga gag agt gtg tgt gtc tct ctc tcc cct cta tac act cta taa aaa aat att tta taa aaa aat atg tga gat atc tct ctc tct ctg tgc gct ctt ttt tta tac act cta taa aat atg tgt gtc tct cta tat atg tgc gca cag aga gat att ttc tca cat att ttt ttg tgt gta taa aat att tta tag aga gag agg ggt gtg tga gat atg tga gaa aag agt gtc tca cag aga gac aca caa aaa aat atc tcg cgc gct ctc tcc cca cag agg ggg ggc gca caa aaa aac act ctg tgg gga gaa aaa aag aga gat att ttg tgc gct ctg tga gat att tta tat ata taa aat att tta tat ata taa aaa aat att tta tac acc cca cag aga gat atg tga gat att ttt ttt tta tac aca cag agg ggc gct ctg tgc gcg cgt gtt tta tat ata tag agc gct ctt ttg tgg gga gaa aat att ttc tct cta taa aac aca caa aat atc tct ctt ttg tga gat att ttc tct cta taa aag agg ggt gtt ttg tgg ggt gtg tgg ggt gta taa aat att tta tat ata taa aat att tta tac acc ccg cgg ggt gta tat ata tag aga gat att ttg tgt gtt ttt tta tag agg gga gaa aag agt gtc tct cta taa aat atc tct ctc tca caa aaa aac acc cct ctt ttt ttt ttg tga gag aga gag aga gag aga gat ata tat att ttt ttc tca caa aac act ctg tga gaa aaa aat atc tct cta tat atc tca cag agg ggc gcc ccg cgg ggt gta tag agc gca caa aaa aac acc cct ctt ttg tgt gta taa aat atg tgg ggt gtg tgt gtt ttg tga gaa aag agg ggt gtt ttt ttt tta taa aat att ttg tgt gtt tta tac act ctt ttt ttc tcc cct ctt ttt tta tac aca caa aat atc tca cat ata tat atg tgg ggt gtt ttt ttc tcc cca caa aac acc ccc cca cac act cta taa aat atg tgg ggt gtg tgt gtt ttg tgg ggt gtt tta tac acc cca caa aac acc cca cat ata tac aca cag aga gag agt gta tag agt gta tag agt gta tac act ctt ttt ttc tct ctt ttt ttt ttg tga gaa aac act ctt ttc tct cta tac aca cat atg tgc gca cac acc cca cag agc gca caa aac act ctg tgt gtt ttt ttg tgt gtg tgg gga gac acc cct cta taa aaa aaa aaa aag agt gtc tct cta tac act cta taa aat att ttt ttg tgg ggt gtt tta taa aaa aaa aaa aac aca caa aaa aat atg tgt gtg tgt gtc tca caa aat att ttt ttc 
+
+ Decoded Labels: aga gag agt gtc tcc cca caa aac acc cca caa aac aca cag aga gaa aat atc tct cta tat att ttg tgt gtt tta tag aga gat att ttt ttc tcc cct cta taa aat ata tat att tta tac aca caa aaa aac act ctt ttg tgt gtg tgc gcc ccc cct ctt ttt ttt ttg tgg ggt gtg tga gaa aag agt gtt ttt ttt ttt tta taa aac acg cgc gcc cca cac acc cca cag aga gat att ttt ttg tgc gca cat atc tct ctg tgt gtt ttt tta tat atg tgc gct ctt ttg tgg gga gaa aac aca cag agg gga gaa aag aga gag aga gaa aat atc tca cag agc gca caa aac act ctg tgt gtg tgt gtt ttg tgc gct ctg tga gat att tta tat att ttc tct ctg tgt gtc tcc cct cta tat ata tat ata taa aat att ttc tcc ccg cgc gca cat atc tca cat att ttt ttt ttc tcc cca cac act ctt ttt ttt tta taa aag agt gtg tgt gtt tta tat atg tgg gga gag agt gtg tgt gtc tct ctc tcc cct cta tac act cta taa aaa aat att tta taa aaa aat atg tga gat atc tct ctc tct ctg tgc gct ctt ttt tta tac act cta taa aat atg tgt gtc tct cta tat atg tgc gca cag aga gat att ttc tca cat att ttt ttg tgt gta taa aat att tta tag aga gag agg ggt gtg tga gat atg tga gaa aag agt gtc tca cag aga gac aca caa aaa aat atc tcg cgc gct ctc tcc cca cag agg ggg ggc gca caa aaa aac act ctg tgg gga gaa aaa aag aga gat att ttg tgc gct ctg tga gat att tta tat ata taa aat att tta tat ata taa aaa aat att tta tac acc cca cag aga gat atg tga gat att ttt ttt tta tac aca cag agg ggc gct ctg tgc gcg cgt gtt tta tat ata tag agc gct ctt ttg tgg gga gaa aat att ttc tct cta taa aac aca caa aat atc tct ctt ttg tga gat att ttc tct cta taa aag agg ggt gtt ttg tgg ggt gtg tgg ggt gta taa aat att tta tat ata taa aat att tta tac acc ccg cgg ggt gta tat ata tag aga gat att ttg tgt gtt ttt tta tag agg gga gaa aag agt gtc tct cta taa aat atc tct ctc tca caa aaa aac acc cct ctt ttt ttt ttg tga gag aga gag aga gag aga gat ata tat att ttt ttc tca caa aac act ctg tga gaa aaa aat atc tct cta tat atc tca cag agg ggc gcc ccg cgg ggt gta tag agc gca caa aaa aac acc cct ctt ttg tgt gta taa aat atg tgg ggt gtg tgt gtt ttg tga gaa aag agg ggt gtt ttt ttt tta taa aat att ttg tgt gtt tta tac act ctt ttt ttc tcc cct ctt ttt tta tac aca caa aat atc tca cat ata tat atg tgg ggt gtt ttt ttc tcc cca caa aac acc ccc cca cac act cta taa aat atg tgg ggt gtg tgt gtt ttg tgg ggt gtt tta tac acc cca caa aac acc cca cat ata tac aca cag aga gag agt gta tag agt gta tag agt gta tac act ctt ttt ttc tct ctt ttt ttt ttg tga gaa aac act ctt ttc tct cta tac aca cat atg tgc gca cac acc cca cag agc gca caa aac act ctg tgt gtt ttt ttg tgt gtg tgg gga gac acc cct cta taa aaa aaa aaa aag agt gtc tct cta tac act cta taa aat att ttt ttg tgg ggt gtt tta taa aaa aaa aaa aac aca caa aaa aat atg tgt gtg tgt gtc tca caa aat att ttt ttc
+{'eval_loss': 0.02356654591858387, 'eval_bleu': 0.9991014545828796, 'eval_precisions': [0.9994089077792322, 0.9992032749714516, 0.9990010911583633, 0.9987926496812408], 'eval_brevity_penalty': 1.0, 'eval_length_ratio': 1.0000035686265816, 'eval_translation_length': 18494576, 'eval_reference_length': 18494510, 'eval_runtime': 1944.1256, 'eval_samples_per_second': 14.262, 'eval_steps_per_second': 0.891, 'epoch': 4.0}
+{'train_runtime': 11667.0736, 'train_samples_per_second': 38.026, 'train_steps_per_second': 2.377, 'train_loss': 0.025953450577147628, 'epoch': 4.0}
+                                              Labels                                        Predictions
+0  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+1  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+2  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+3  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+4  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+
+
+ Decoded Preds: aga gag agt gtc tcc cca caa aac acc cca caa aac aca cag aga gaa aat atc tct cta tat att ttg tgt gtt tta tag aga gat att ttt ttc tcc cct cta taa aat ata tat att tta tac aca caa aaa aac act ctt ttg tgt gtg tgc gcc ccc cct ctt ttt ttt ttg tgg ggt gtg tga gaa aag agt gtt ttt ttt ttt tta taa aac acg cgc gcc cca cac acc cca cag aga gat att ttt ttg tgc gca cat atc tct ctg tgt gtt ttt tta tat atg tgc gct ctt ttg tgg gga gaa aac aca cag agg gga gaa aag aga gag aga gaa aat atc tca cag agc gca caa aac act ctg tgt gtg tgt gtt ttg tgc gct ctg tga gat att tta tat att ttc tct ctg tgt gtc tcc cct cta tat ata tat ata taa aat att ttc tcc ccg cgc gca cat atc tca cat att ttt ttt ttc tcc cca cac act ctt ttt ttt tta taa aag agt gtg tgt gtt tta tat atg tgg gga gag agt gtg tgt gtc tct ctc tcc cct cta tac act cta taa aaa aat att tta taa aaa aat atg tga gat atc tct ctc tct ctg tgc gct ctt ttt tta tac act cta taa aat atg tgt gtc tct cta tat atg tgc gca cag aga gat att ttc tca cat att ttt ttg tgt gta taa aat att tta tag aga gag agg ggt gtg tga gat atg tga gaa aag agt gtc tca cag aga gac aca caa aaa aat atc tcg cgc gct ctc tcc cca cag agg ggg ggc gca caa aaa aac act ctg tgg gga gaa aaa aag aga gat att ttg tgc gct ctg tga gat att tta tat ata taa aat att tta tat ata taa aaa aat att tta tac acc cca cag aga gat atg tga gat att ttt ttt tta tac aca cag agg ggc gct ctg tgc gcg cgt gtt tta tat ata tag agc gct ctt ttg tgg gga gaa aat att ttc tct cta taa aac aca caa aat atc tct ctt ttg tga gat att ttc tct cta taa aag agg ggt gtt ttg tgg ggt gtg tgg ggt gta taa aat att tta tat ata taa aat att tta tac acc ccg cgg ggt gta tat ata tag aga gat att ttg tgt gtt ttt tta tag agg gga gaa aag agt gtc tct cta taa aat atc tct ctc tca caa aaa aac acc cct ctt ttt ttt ttg tga gag aga gag aga gag aga gat ata tat att ttt ttc tca caa aac act ctg tga gaa aaa aat atc tct cta tat atc tca cag agg ggc gcc ccg cgg ggt gta tag agc gca caa aaa aac acc cct ctt ttg tgt gta taa aat atg tgg ggt gtg tgt gtt ttg tga gaa aag agg ggt gtt ttt ttt tta taa aat att ttg tgt gtt tta tac act ctt ttt ttc tcc cct ctt ttt tta tac aca caa aat atc tca cat ata tat atg tgg ggt gtt ttt ttc tcc cca caa aac acc ccc cca cac act cta taa aat atg tgg ggt gtg tgt gtt ttg tgg ggt gtt tta tac acc cca caa aac acc cca cat ata tac aca cag aga gag agt gta tag agt gta tag agt gta tac act ctt ttt ttc tct ctt ttt ttt ttg tga gaa aac act ctt ttc tct cta tac aca cat atg tgc gca cac acc cca cag agc gca caa aac act ctg tgt gtt ttt ttg tgt gtg tgg gga gac acc cct cta taa aaa aaa aaa aag agt gtc tct cta tac act cta taa aat att ttt ttg tgg ggt gtt tta taa aaa aaa aaa aac aca caa aaa aat atg tgt gtg tgt gtc tca caa aat att ttt ttc 
+
+ Decoded Labels: aga gag agt gtc tcc cca caa aac acc cca caa aac aca cag aga gaa aat atc tct cta tat att ttg tgt gtt tta tag aga gat att ttt ttc tcc cct cta taa aat ata tat att tta tac aca caa aaa aac act ctt ttg tgt gtg tgc gcc ccc cct ctt ttt ttt ttg tgg ggt gtg tga gaa aag agt gtt ttt ttt ttt tta taa aac acg cgc gcc cca cac acc cca cag aga gat att ttt ttg tgc gca cat atc tct ctg tgt gtt ttt tta tat atg tgc gct ctt ttg tgg gga gaa aac aca cag agg gga gaa aag aga gag aga gaa aat atc tca cag agc gca caa aac act ctg tgt gtg tgt gtt ttg tgc gct ctg tga gat att tta tat att ttc tct ctg tgt gtc tcc cct cta tat ata tat ata taa aat att ttc tcc ccg cgc gca cat atc tca cat att ttt ttt ttc tcc cca cac act ctt ttt ttt tta taa aag agt gtg tgt gtt tta tat atg tgg gga gag agt gtg tgt gtc tct ctc tcc cct cta tac act cta taa aaa aat att tta taa aaa aat atg tga gat atc tct ctc tct ctg tgc gct ctt ttt tta tac act cta taa aat atg tgt gtc tct cta tat atg tgc gca cag aga gat att ttc tca cat att ttt ttg tgt gta taa aat att tta tag aga gag agg ggt gtg tga gat atg tga gaa aag agt gtc tca cag aga gac aca caa aaa aat atc tcg cgc gct ctc tcc cca cag agg ggg ggc gca caa aaa aac act ctg tgg gga gaa aaa aag aga gat att ttg tgc gct ctg tga gat att tta tat ata taa aat att tta tat ata taa aaa aat att tta tac acc cca cag aga gat atg tga gat att ttt ttt tta tac aca cag agg ggc gct ctg tgc gcg cgt gtt tta tat ata tag agc gct ctt ttg tgg gga gaa aat att ttc tct cta taa aac aca caa aat atc tct ctt ttg tga gat att ttc tct cta taa aag agg ggt gtt ttg tgg ggt gtg tgg ggt gta taa aat att tta tat ata taa aat att tta tac acc ccg cgg ggt gta tat ata tag aga gat att ttg tgt gtt ttt tta tag agg gga gaa aag agt gtc tct cta taa aat atc tct ctc tca caa aaa aac acc cct ctt ttt ttt ttg tga gag aga gag aga gag aga gat ata tat att ttt ttc tca caa aac act ctg tga gaa aaa aat atc tct cta tat atc tca cag agg ggc gcc ccg cgg ggt gta tag agc gca caa aaa aac acc cct ctt ttg tgt gta taa aat atg tgg ggt gtg tgt gtt ttg tga gaa aag agg ggt gtt ttt ttt tta taa aat att ttg tgt gtt tta tac act ctt ttt ttc tcc cct ctt ttt tta tac aca caa aat atc tca cat ata tat atg tgg ggt gtt ttt ttc tcc cca caa aac acc ccc cca cac act cta taa aat atg tgg ggt gtg tgt gtt ttg tgg ggt gtt tta tac acc cca caa aac acc cca cat ata tac aca cag aga gag agt gta tag agt gta tag agt gta tac act ctt ttt ttc tct ctt ttt ttt ttg tga gaa aac act ctt ttc tct cta tac aca cat atg tgc gca cac acc cca cag agc gca caa aac act ctg tgt gtt ttt ttg tgt gtg tgg gga gac acc cct cta taa aaa aaa aaa aag agt gtc tct cta tac act cta taa aat att ttt ttg tgg ggt gtt tta taa aaa aaa aaa aac aca caa aaa aat atg tgt gtg tgt gtc tca caa aat att ttt ttc
+                                              Labels                                        Predictions
+0  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+1  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+2  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+3  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+4  agagtccaaccaacagaatctattgttagatttcctaatattacaa...  agagtccaaccaacagaatctattgttagatttcctaatattacaa...
+
+
+ Decoded Preds: aga gag agt gtc tcc cca caa aac acc cca caa aac aca cag aga gaa aat atc tct cta tat att ttg tgt gtt tta tag aga gat att ttt ttc tcc cct cta taa aat ata tat att tta tac aca caa aaa aac act ctt ttg tgt gtg tgc gcc ccc cct ctt ttt ttt ttg tgg ggt gtg tga gaa aag agt gtt ttt ttt ttt tta taa aac acg cgc gcc cca cac acc cca cag aga gat att ttt ttg tgc gca cat atc tct ctg tgt gtt ttt tta tat atg tgc gct ctt ttg tgg gga gaa aac aca cag agg gga gaa aag aga gag aga gaa aat atc tca cag agc gca caa aac act ctg tgt gtg tgt gtt ttg tgc gct ctg tga gat att tta tat att ttc tct ctg tgt gtc tcc cct cta tat ata tat ata taa aat att ttc tcc ccg cgc gca cat atc tca cat att ttt ttt ttc tcc cca cac act ctt ttt ttt tta taa aag agt gtg tgt gtt tta tat atg tgg gga gag agt gtg tgt gtc tct ctc tcc cct cta tac act cta taa aaa aat att tta taa aaa aat atg tga gat atc tct ctc tct ctg tgc gct ctt ttt tta tac act cta taa aat atg tgt gtc tct cta tat atg tgc gca cag aga gat att ttc tca cat att ttt ttg tgt gta taa aat att tta tag aga gag agg ggt gtg tga gat atg tga gaa aag agt gtc tca cag aga gac aca caa aaa aat atc tcg cgc gct ctc tcc cca cag agg ggg ggc gca caa aaa aac act ctg tgg gga gaa aaa aag aga gat att ttg tgc gct ctg tga gat att tta tat ata taa aat att tta tat ata taa aaa aat att tta tac acc cca cag aga gat atg tga gat att ttt ttt tta tac aca cag agg ggc gct ctg tgc gcg cgt gtt tta tat ata tag agc gct ctt ttg tgg gga gaa aat att ttc tct cta taa aac aca caa aat atc tct ctt ttg tga gat att ttc tct cta taa aag agg ggt gtt ttg tgg ggt gtg tgg ggt gta taa aat att tta tat ata taa aat att tta tac acc ccg cgg ggt gta tat ata tag aga gat att ttg tgt gtt ttt tta tag agg gga gaa aag agt gtc tct cta taa aat atc tct ctc tca caa aaa aac acc cct ctt ttt ttt ttg tga gag aga gag aga gag aga gat ata tat att ttt ttc tca caa aac act ctg tga gaa aaa aat atc tct cta tat atc tca cag agg ggc gcc ccg cgg ggt gta tag agc gca caa aaa aac acc cct ctt ttg tgt gta taa aat atg tgg ggt gtg tgt gtt ttg tga gaa aag agg ggt gtt ttt ttt tta taa aat att ttg tgt gtt tta tac act ctt ttt ttc tcc cct ctt ttt tta tac aca caa aat atc tca cat ata tat atg tgg ggt gtt ttt ttc tcc cca caa aac acc ccc cca cac act cta taa aat atg tgg ggt gtg tgt gtt ttg tgg ggt gtt tta tac acc cca caa aac acc cca cat ata tac aca cag aga gag agt gta tag agt gta tag agt gta tac act ctt ttt ttc tct ctt ttt ttt ttg tga gaa aac act ctt ttc tct cta tac aca cat atg tgc gca cac acc cca cag agc gca caa aac act ctg tgt gtt ttt ttg tgt gtg tgg gga gac acc cct cta taa aaa aaa aaa aag agt gtc tct cta tac act cta taa aat att ttt ttg tgg ggt gtt tta taa aaa aaa aaa aac aca caa aaa aat atg tgt gtg tgt gtc tca caa aat att ttt ttc 
+
+ Decoded Labels: aga gag agt gtc tcc cca caa aac acc cca caa aac aca cag aga gaa aat atc tct cta tat att ttg tgt gtt tta tag aga gat att ttt ttc tcc cct cta taa aat ata tat att tta tac aca caa aaa aac act ctt ttg tgt gtg tgc gcc ccc cct ctt ttt ttt ttg tgg ggt gtg tga gaa aag agt gtt ttt ttt ttt tta taa aac acg cgc gcc cca cac acc cca cag aga gat att ttt ttg tgc gca cat atc tct ctg tgt gtt ttt tta tat atg tgc gct ctt ttg tgg gga gaa aac aca cag agg gga gaa aag aga gag aga gaa aat atc tca cag agc gca caa aac act ctg tgt gtg tgt gtt ttg tgc gct ctg tga gat att tta tat att ttc tct ctg tgt gtc tcc cct cta tat ata tat ata taa aat att ttc tcc ccg cgc gca cat atc tca cat att ttt ttt ttc tcc cca cac act ctt ttt ttt tta taa aag agt gtg tgt gtt tta tat atg tgg gga gag agt gtg tgt gtc tct ctc tcc cct cta tac act cta taa aaa aat att tta taa aaa aat atg tga gat atc tct ctc tct ctg tgc gct ctt ttt tta tac act cta taa aat atg tgt gtc tct cta tat atg tgc gca cag aga gat att ttc tca cat att ttt ttg tgt gta taa aat att tta tag aga gag agg ggt gtg tga gat atg tga gaa aag agt gtc tca cag aga gac aca caa aaa aat atc tcg cgc gct ctc tcc cca cag agg ggg ggc gca caa aaa aac act ctg tgg gga gaa aaa aag aga gat att ttg tgc gct ctg tga gat att tta tat ata taa aat att tta tat ata taa aaa aat att tta tac acc cca cag aga gat atg tga gat att ttt ttt tta tac aca cag agg ggc gct ctg tgc gcg cgt gtt tta tat ata tag agc gct ctt ttg tgg gga gaa aat att ttc tct cta taa aac aca caa aat atc tct ctt ttg tga gat att ttc tct cta taa aag agg ggt gtt ttg tgg ggt gtg tgg ggt gta taa aat att tta tat ata taa aat att tta tac acc ccg cgg ggt gta tat ata tag aga gat att ttg tgt gtt ttt tta tag agg gga gaa aag agt gtc tct cta taa aat atc tct ctc tca caa aaa aac acc cct ctt ttt ttt ttg tga gag aga gag aga gag aga gat ata tat att ttt ttc tca caa aac act ctg tga gaa aaa aat atc tct cta tat atc tca cag agg ggc gcc ccg cgg ggt gta tag agc gca caa aaa aac acc cct ctt ttg tgt gta taa aat atg tgg ggt gtg tgt gtt ttg tga gaa aag agg ggt gtt ttt ttt tta taa aat att ttg tgt gtt tta tac act ctt ttt ttc tcc cct ctt ttt tta tac aca caa aat atc tca cat ata tat atg tgg ggt gtt ttt ttc tcc cca caa aac acc ccc cca cac act cta taa aat atg tgg ggt gtg tgt gtt ttg tgg ggt gtt tta tac acc cca caa aac acc cca cat ata tac aca cag aga gag agt gta tag agt gta tag agt gta tac act ctt ttt ttc tct ctt ttt ttt ttg tga gaa aac act ctt ttc tct cta tac aca cat atg tgc gca cac acc cca cag agc gca caa aac act ctg tgt gtt ttt ttg tgt gtg tgg gga gac acc cct cta taa aaa aaa aaa aag agt gtc tct cta tac act cta taa aat att ttt ttg tgg ggt gtt tta taa aaa aaa aaa aac aca caa aaa aat atg tgt gtg tgt gtc tca caa aat att ttt ttc
+
+
+ Extracting Training History !! 
+ 
+
+
+ RESULTS OF TEST DATASET !!
+
+
+
+{'eval_loss': 0.02293827384710312, 'eval_bleu': 0.9991192533969316, 'eval_precisions': [0.9994188566420771, 0.9992192712042683, 0.9990217320566275, 0.9988172540131675], 'eval_brevity_penalty': 1.0, 'eval_length_ratio': 1.0000031144363295, 'eval_translation_length': 23118220, 'eval_reference_length': 23118148, 'eval_runtime': 2361.8044, 'eval_samples_per_second': 14.675, 'eval_steps_per_second': 0.918, 'epoch': 4.0}

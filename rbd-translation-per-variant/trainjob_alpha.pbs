@@ -1,0 +1,16 @@
+#!/bin/bash
+#PBS -N RBDAlphaTranslationNSP
+#PBS -q gpus
+#PBS -l select=1:ncpus=8:mem=32gb:ngpus=1:glist=a100
+#PBS -l walltime=72:00:00
+#PBS -m abe
+#PBS -W group_list=x-ccast-prj-chayan
+
+cd $PBS_O_WORKDIR
+
+source ~/anaconda3/bin/activate flax_fine_tune
+
+export HF_DATASETS_CACHE=$PWD/dataset
+
+
+python3 translation_nsp_alpha.py

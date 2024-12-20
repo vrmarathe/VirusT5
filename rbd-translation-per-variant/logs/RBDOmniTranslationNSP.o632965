@@ -1,0 +1,101 @@
+Original Dataset !! 
+  Lineage GenS1  ...                                               Seq2   Variant
+0       A  Gen1  ...  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...  WuhanHu1
+1       A  Gen1  ...  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...  WuhanHu1
+2       A  Gen1  ...  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...  WuhanHu1
+3       A  Gen1  ...  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...  WuhanHu1
+4       A  Gen1  ...  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...  WuhanHu1
+
+[5 rows x 6 columns]
+
+Columns: Index(['Lineage', 'GenS1', 'GenS2', 'Seq1', 'Seq2', 'Variant'], dtype='object')
+          Lineage  ...  Variant
+184751  B.1.1.529  ...  omicron
+184752  B.1.1.529  ...  omicron
+184753  B.1.1.529  ...  omicron
+184754  B.1.1.529  ...  omicron
+184755  B.1.1.529  ...  omicron
+
+[5 rows x 6 columns]
+(177091, 6)
+I AM HERE !
+I AM HERE !!
+                                                     Seq1  ...                                        translation
+184751  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...  ...  {'Seq1': 'AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCT...
+184752  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...  ...  {'Seq1': 'AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCT...
+184753  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...  ...  {'Seq1': 'AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCT...
+184754  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...  ...  {'Seq1': 'AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCT...
+184755  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAA...  ...  {'Seq1': 'AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCT...
+
+[5 rows x 4 columns]
+
+ Huggingface Dataset : 
+ DatasetDict({
+    train: Dataset({
+        features: ['translation', '__index_level_0__'],
+        num_rows: 141672
+    })
+    test: Dataset({
+        features: ['translation', '__index_level_0__'],
+        num_rows: 35419
+    })
+})
+DatasetDict({
+    train: Dataset({
+        features: ['translation', '__index_level_0__'],
+        num_rows: 113337
+    })
+    test: Dataset({
+        features: ['translation', '__index_level_0__'],
+        num_rows: 28335
+    })
+})
+DatasetDict({
+    train: Dataset({
+        features: ['translation', '__index_level_0__'],
+        num_rows: 113337
+    })
+    validation: Dataset({
+        features: ['translation', '__index_level_0__'],
+        num_rows: 28335
+    })
+})
+DatasetDict({
+    train: Dataset({
+        features: ['translation', '__index_level_0__'],
+        num_rows: 113337
+    })
+    validation: Dataset({
+        features: ['translation', '__index_level_0__'],
+        num_rows: 28335
+    })
+    test: Dataset({
+        features: ['translation', '__index_level_0__'],
+        num_rows: 35419
+    })
+})
+
+
+Dataset after Breaking into Train_Val_Test
+DatasetDict({
+    train: Dataset({
+        features: ['translation', '__index_level_0__'],
+        num_rows: 113337
+    })
+    validation: Dataset({
+        features: ['translation', '__index_level_0__'],
+        num_rows: 28335
+    })
+    test: Dataset({
+        features: ['translation', '__index_level_0__'],
+        num_rows: 35419
+    })
+})
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
