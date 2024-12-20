@@ -1,0 +1,1 @@
+VirusT5 is a transformer-based language model tailored for predicting SARS-CoV-2 evolution. Leveraging the T5 architecture, this model treats the viral mutation process as a "mutation-as-translation" task. It is designed to analyze mutation patterns in the Receptor-Binding Domain (RBD) of the spike protein and forecast future viral strains.
