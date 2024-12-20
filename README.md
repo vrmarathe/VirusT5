@@ -9,6 +9,20 @@ VirusT5 is a transformer-based language model built on the T5 architecture, desi
 - **Mutation Prediction**: Translates parental RBD sequences into evolved child sequences.  
 - **Generative Evolution**: Simulates multi-generational viral evolution.  
 
+## Model Availability
+The model is available to use through Huggingface [VirusT5](https://huggingface.co/vrmarathe/VirusT5)
+## How To Use The Pretrained Model
+```
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+
+# Load the tokenizer for the VirusT5 model
+tokenizer = AutoTokenizer.from_pretrained("vrmarathe/VirusT5", trust_remote_code=True)
+
+# Load the pre-trained VirusT5 model (T5-based)
+model = AutoModelForSeq2SeqLM.from_pretrained("vrmarathe/VirusT5", trust_remote_code=True)
+```
+
+
 
 ## How It Works  
 VirusT5 is pretrained on 100,000 SARS-CoV-2 genome sequences from the GISAID database. Fine-tuning involves tasks like:  
