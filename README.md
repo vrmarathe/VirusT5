@@ -38,7 +38,7 @@ VirusT5 is pretrained on 100,000 SARS-CoV-2 genome sequences from the GISAID dat
 ## Installation  
 Clone the repository and set up the required dependencies:  
 ```bash  
-git clone [https://github.com/yourusername/VirusT5.git](https://github.com/vrmarathe/VirusT5.git)  
+git clone https://github.com/vrmarathe/VirusT5.git
 cd VirusT5
 cd environment
 conda env create -f flax2_environment.yml
