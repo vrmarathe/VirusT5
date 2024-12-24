@@ -19,7 +19,7 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 tokenizer = AutoTokenizer.from_pretrained("vrmarathe/VirusT5", trust_remote_code=True)
 
 # Load the pre-trained VirusT5 model (T5-based)
-model = AutoModelForSeq2SeqLM.from_pretrained("vrmarathe/VirusT5", trust_remote_code=True)
+model = AutoModelForSeq2SeqLM.from_pretrained("vrmarathe/VirusT5", trust_remote_code=True,from_flax=True)
 ```
 
 
