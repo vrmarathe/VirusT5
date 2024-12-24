@@ -126,8 +126,18 @@ Fine-tuning tailored the pretrained VirusT5 model for specific downstream tasks,
 
   
 ## Citation  
-If you use VirusT5 in your research, please cite the following paper:  
-
+If you use VirusT5 in your research, please cite the following paper:
+```
+@misc{marathe2024virust5harnessinglargelanguage,
+      title={VirusT5: Harnessing Large Language Models to Predicting SARS-CoV-2 Evolution}, 
+      author={Vishwajeet Marathe and Deewan Bajracharya and Changhui Yan},
+      year={2024},
+      eprint={2412.16262},
+      archivePrefix={arXiv},
+      primaryClass={q-bio.QM},
+      url={https://arxiv.org/abs/2412.16262}, 
+}
+```
 
 
 
