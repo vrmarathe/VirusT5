@@ -219,11 +219,11 @@ def compute_metrics(eval_preds):
     decoded_preds = df_predictions['Predictions'].tolist()
     decoded_labels = df_predictions['Labels'].tolist()
     
-    #decoded_preds = list(map(seq2kmer(seq, 3), decoded_preds))
-    #decoded_labels = list(map(seq2kmer(seq, 3), decoded_labels))
+    decoded_preds = list(map(seq2kmer(seq, 3), decoded_preds))
+    decoded_labels = list(map(seq2kmer(seq, 3), decoded_labels))
     
     
-    #df_predictions = pd.DataFrame({'Labels': decoded_labels, 'Predictions:':decoded_preds})
+    df_predictions = pd.DataFrame({'Labels': decoded_labels, 'Predictions:':decoded_preds})
     #print(df_predictions.head())
     
     #df_predictions.to_csv("df_predictions.csv")
@@ -235,7 +235,7 @@ def compute_metrics(eval_preds):
     
     #df_predictions.to_csv("df_predictions.csv")
 
-    print("\n\n Decoded Preds:",decoded_preds[0],"\n\n Decoded Labels:",decoded_labels[0])
+    #print("\n\n Decoded Preds:",decoded_preds[0],"\n\n Decoded Labels:",decoded_labels[0])
     result = metric.compute(predictions=decoded_preds, references=decoded_labels)
     #counter=counter+1
     return result
